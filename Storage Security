@@ -1,0 +1,5 @@
+□ Block public access by default
+□ Use encryption (SSE-S3, SSE-KMS)
+□ Enable versioning
+□ Enable bucket logging
+□ Use lifecycle policies
