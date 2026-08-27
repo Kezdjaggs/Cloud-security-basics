@@ -1,0 +1,47 @@
+# ☁️ Cloud Security Basics
+
+**Author:** Kehinde Jaggs (CEH)  
+**LinkedIn:** [linkedin.com/in/kehinde-jagunna-7b063a319](https://www.linkedin.com/in/kehinde-jagunna-7b063a319)
+
+---
+
+## 📋 Overview
+
+Cloud security fundamentals covering AWS, Azure, and GCP. This guide covers shared responsibility, IAM, network security, and best practices.
+
+---
+
+## 🔄 Shared Responsibility Model
+
+| Responsibility | AWS | Azure | GCP |
+| :--- | :--- | :--- | :--- |
+| **Physical Security** | Cloud Provider | Cloud Provider | Cloud Provider |
+| **Network Infrastructure** | Cloud Provider | Cloud Provider | Cloud Provider |
+| **Operating System** | Customer | Customer | Customer |
+| **Applications** | Customer | Customer | Customer |
+| **Data** | Customer | Customer | Customer |
+| **Access Management** | Customer | Customer | Customer |
+
+---
+
+## 🛡️ IAM (Identity & Access Management)
+
+### Best Practices
+- [ ] Use MFA for all users
+- [ ] Implement least privilege
+- [ ] Rotate credentials regularly
+- [ ] Monitor IAM activity
+- [ ] Use IAM roles for services
+
+### AWS IAM
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::example-bucket"
+    }
+  ]
+}
