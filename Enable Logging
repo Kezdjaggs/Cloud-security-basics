@@ -1,0 +1,8 @@
+# AWS CloudTrail
+aws cloudtrail create-trail --name trail-name --s3-bucket-name bucket-name
+
+# Azure Monitor
+az monitor diagnostic-settings create --resource <resource-id> --name settings-name
+
+# GCP Cloud Audit Logs
+gcloud logging sinks create sink-name storage.googleapis.com/bucket-name
