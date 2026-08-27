@@ -1,0 +1,6 @@
+VPC Best Practices
+□ Use multiple subnets
+□ Implement security groups
+□ Use NACLs
+□ Enable VPC flow logs
+□ Use private subnets for sensitive resources
